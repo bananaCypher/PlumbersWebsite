@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {
+  margin: 0px;
+  font-family: helvetica;
+  color: rgba(0,0,0,0.8);
+}
+a {
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0,0,0,1);
+}
+a:visited {
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+p {
+  margin: 25px 25px;
+}
+h3 {
+  margin: 50px 25px 25px 25px;
+}
+
+
+
+div.header {
+  width: 100%;
+  min-width: 695px;
+  overflow-x: scroll;
+  overflow-y: hidden; 
+  height: 400px;
+  background-image: url(/HeaderImage.png);
+  background-size: cover;
+  background-position:  30% 20%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.header h1 {
+  margin: auto auto;
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  color: rgba(255,255,255,0.70);
+}
+.header a {
+  background-color: rgba(255, 246, 0, 0.7);
+  font-size: 25px;
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: 1px;
+}
+.header a:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(255, 246, 0, 0.7);
+}
+.header input {
+  position: absolute;
+  border: 2px solid rgba(255,255,255,0.7); 
+  top: 10px;
+  left: 10px;
+  width: 180px;
+  height: 40px;
+  background-color: transparent;
+  color: rgba(255,255,255,0.7); 
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+.header button {
+  position: absolute;
+  border-top: 2px solid rgba(255,255,255,0.7); 
+  border-right: 2px solid rgba(255,255,255,0.7); 
+  border-bottom: 2px solid rgba(255,255,255,0.7);
+  border-left: 0;
+  top: 10px;
+  left: 194px;
+  width: 80px;
+  height: 44px;
+  background-color: transparent;
+  color: rgba(255,255,255,0.7); 
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+p.quote {
+  font-style: italic;
+}
+
+
+
+
+div.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.services h2 {
+  text-align: center;
+}
+.services p {
+  margin: 0 0; 
+  width: 270px;
+}
+
+
+
+form.contact {
+  margin: 0 auto;
+  width: 500px;
+}
+form.contact h2 {
+  text-align: center;
+}
+form.contact label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 200px;
+}
+form.contact input {
+  height: 20px;
+}
+form.contact select {
+  width: 131px;
+}
+form.contact button {
+  width: 131px;
+  position: relative;
+  left: 215px;
+  height: 45px;
+  background-color: rgba(255, 246, 0, 0.7);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.8);
+  cursor: pointer;
+  font-size: 25px;
+}
+form.contact button:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(255, 246, 0, 0.7);
+}
